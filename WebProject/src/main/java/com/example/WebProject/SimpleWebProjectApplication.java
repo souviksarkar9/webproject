@@ -1,5 +1,7 @@
 package com.example.WebProject;
 
+import java.util.Date;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -22,6 +24,6 @@ public class SimpleWebProjectApplication extends SpringBootServletInitializer {
 
 	@GetMapping("/")
 	public String getString() {
-		return "OK";
+		return new Date().toString();
 	}
 }
